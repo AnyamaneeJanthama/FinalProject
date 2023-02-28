@@ -15,6 +15,12 @@
 <Style>
     body {
         font-family: 'Libre Baskerville', serif;
+        background-image: url('https://media.giphy.com/media/xT4uQ7GOiPdcdV7ies/giphy.gif');
+        background-size: cover;
+
+        height: 100vh;
+        padding: 0;
+        margin: 0;
     }
 
     .form-signin {
@@ -22,8 +28,17 @@
         max-width: 330px;
         padding: 40px;
         margin: auto;
-        background-color: rgb(232, 232, 232);
+        background-color: rgba(232, 232, 232, 0.304);
         box-sizing: border-box;
+        backdrop-filter: blur(15px);
+        border-radius: 3%;
+        color: aliceblue;
+    }
+    .a{
+        color: aliceblue;
+    }
+    .d{
+        color: black;
     }
 </Style>
 
@@ -32,20 +47,20 @@
         <main class="form-signin mt-5">
             <form method="post" action="/users">
                 <h1 class="mb-3 fw-normal">Login</h1>
-                <div class="form-floating mb-2 mt-4">
+                <div class="form-floating mb-2 mt-4 d">
                     <input type="text" name="username" class="form-control" id="floatingInput"
                         placeholder="Please Enter Your Username" required>
                     <label for="floatingInput">Username</label>
                 </div>
-                <div class="form-floating mb-2">
+                <div class="form-floating mb-2 d">
                     <input type="password" name="password" class="form-control" id="floatingPassword"
                         placeholder="Enter Your Password" required>
                     <label for="floatingPassword">Password</label>
                 </div>
 
-                <button class="w-100 btn btn-lg btn-dark mt-3" name="submit" type="submit">Log in</button>
+                <button class="w-100 btn btn-default btn-dark mt-3" name="submit" type="submit">Log in</button>
             </form>
-            <div class="text-center mt-3">Don't you have your accout yet? <a href="/register">Create your
+            <div class="text-center mt-3">Don't you have your accout yet? <a class="link-light" href="/register">Create your
                     Account</a></a>
             </div>
         </main>

@@ -15,6 +15,12 @@
 <Style>
     body {
         font-family: 'Libre Baskerville', serif;
+        background-image: url('https://media.giphy.com/media/xT4uQ7GOiPdcdV7ies/giphy.gif');
+        background-size: cover;
+
+        height: 100vh;
+        padding: 0;
+        margin: 0;
     }
 
     .form-signin {
@@ -22,8 +28,11 @@
         max-width: 330px;
         padding: 40px;
         margin: auto;
-        background-color: rgb(232, 232, 232);
+        background-color: rgba(232, 232, 232, 0.304);
         box-sizing: border-box;
+        backdrop-filter: blur(15px);
+        border-radius: 3%;
+        color: aliceblue;
     }
 </Style>
 
@@ -59,8 +68,8 @@
                 <div class="form-group row mt-3">
                     <label class="col-form-label col-sm-2"></label>
                     <div class="col-sm-12 d-grid gap-2">
-                        <input type="submit" value="Save" class="btn btn-default btn-success" />
-                        <a class="btn btn-outline-dark cancel" href="./">Cancel</a>
+                        <input type="submit" value="Save" class="btn btn-default btn-dark" />
+                        <a class="btn btn-outline-light cancel" href="./">Cancel</a>
                     </div>
                 </div>
             </form>
